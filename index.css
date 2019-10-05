@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+    margin: 0 30%;
+  }
+
+  h1 {
+    position: absolute;
+    margin: auto;
+  }
+  
+  section {
+    max-width: 500px;
+    margin-top: 50px;
+    padding: 20px;
+    border: 2px solid black;
+    height: 400px;
+  }
+
+  #left-side {
+    align-self: flex-start;
+  }
+  
+  #right-side {
+    align-self: flex-end;
+  }

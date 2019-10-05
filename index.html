@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Brock Waiter Earnings Calculator</title>
+  </head>
+  <body>
+      <h1>Waitstaff Calculator</h1>
+      <section id="meal-details left-side">
+          <h2>Enter Meal Details</h2>
+          <form id='details-form'>
+              <div>
+                  <label for="meal-price">Meal Price: $</label>
+                  <input type="number" name="meal-price" class="meal-price-entry" placeholder="0.00" min='0.00' step='any' required>
+              </div>
+              <div>
+                  <label for="tax-rate">Tax Rate: %</label>
+                  <input type="number" name="tax-rate" class="tax-rate-entry" placeholder="7.5" min='0.00' step='any' value='7.5' required>
+              </div>
+              <div>
+                  <label for="tip-percentage">Tip Percentage: %</label>
+                  <input type="number" name="tip-percent" class="tip-percent-entry" placeholder="15" min='0.00' step='any' required>
+              </div>
+              <div>
+                  <button type='submit'>Submit</button>
+                  <button type='submit' class='cancel-button'>Cancel</button>
+              </div>
+          </form>
+      </section>
+  
+      <section id="customer-input right-side">
+        <div class="right-charges">
+            <h2>Charges</h2>
+            <p>Subtotal $0.00</p>
+            <p>Tip $0.00</p>
+            <p>Total $0.00</p>
+        </div>
+        <div class="right-earnings">
+            <h2>Earnings</h2>
+            <p>Tip Total: $0.00</p>
+            <p>Meal Count: $0.00</p>
+            <p>Average tip per Meal: $0.00</p>
+        </div>
+        <div>
+            <button type="submit" class="reset-button">Reset</button>
+        </div>
+      </section>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  </body>
+  </html>
